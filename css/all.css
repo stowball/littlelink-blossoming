@@ -277,6 +277,7 @@ h1 {
 
 .button,
 button {
+   box-sizing: border-box;
    display: inline-block;
    text-decoration: none;
    height: 100%;
