@@ -26,9 +26,25 @@
 
 */
 
+body {
+  background-color: #F8F7F8;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #070807;
+  }
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .avatar {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 h1 {
@@ -65,14 +81,6 @@ button {
   filter: brightness(90%);
   outline: #7AB8FF solid 3px
 }
-.button.button-primary {
-  color: #fff;
-  filter: brightness(90%);
-}
-.button.button-primary:hover,
-.button.button-primary:focus-visible {
-  color: #fff;
-}
 
 /* Brand Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -87,78 +95,8 @@ button {
 /* Brand Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Default (this is great for your own brand color!) */
 .button.button-default {
   color: #ffffff;
-  background-color: #2457F5;
-}
-
-/* Discord */
-.button.button-discord {
-  color: #ffffff;
-  background-color: #5865f2;
-}
-
-/* Facebook */
-.button.button-faceb {
-  color: #ffffff;
-  background-color: #1877f2;
-}
-
-/* Kick */
-.button.button-kick {
-  background-color:#000000;
-  color:  #ffffff;
-  border: 1px solid #ffffff;
-}
-
-/* Kick Alt */
-.button.button-kick-alt {
-  background-color:#01e701;
-  color:  #000;
-}
-
-/* Kickstarter */
-.button.button-kickstarter {
-  color: #ffffff;
-  background-color: #05ce78;
-}
-
-/* Website */
-.button.button-web {
-  color: #ffffff;
-  background-color: #000000;
-  border: 1px solid #FFFFFF;
-}
-
-/* X */
-.button.button-x {
-  color: #FFFFFF;
-  background-color: #000000;
-  border: 1px solid #FFFFFF;
-}
-
-/* YouTube */
-.button.button-yt {
-  color: #ffffff;
-  background-color: #000000;
-  border: 1px solid #FFFFFF;
-}
-
-/* Screentop */
-.button.button-screentop {
-  color: #FFFFFF;
-  background-color: #000000;
-  border: 1px solid #FFFFFF;
-}
-
-/* Google Docs */
-.button.button-google-docs {
-  color: #FFFFFF;
-  background-color: #4285F4;
-  border: 1px solid #FFFFFF;
-}
-
-body {
-  background-color: #E8E5E8;
+  background-color: #2E090D;
+  border: 1px solid rgba(255,255,255, 0.5);
 }

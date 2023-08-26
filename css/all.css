@@ -1,36 +1,97 @@
-/*
-* littlelink V1
-* https://littlelink.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/21/2019
-*
-* Built using:
-*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Code
-- Spacing
-- Utilities
-*
-* You'll find the button css in css/brands.css.
-*
-*/
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+button {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -54,7 +115,6 @@
   box-sizing: border-box;
 }
 
-/* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
     width: 85%;
@@ -62,7 +122,6 @@
   }
 }
 
-/* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
     width: 80%;
@@ -77,12 +136,6 @@
   }
 }
 
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
-
 html {
   font-size: 100%;
   color-scheme: light dark;
@@ -95,8 +148,6 @@ body {
     sans-serif;
 }
 
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1 {
   margin-top: 0;
   margin-bottom: 16px;
@@ -108,7 +159,6 @@ h1 {
   letter-spacing: 0;
 }
 
-/* Larger than phablet */
 @media (min-width: 550px) {
   h1 {
     font-size: 48px;
@@ -120,8 +170,6 @@ p {
   margin-top: 0;
 }
 
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #2457F5;
 }
@@ -133,7 +181,6 @@ a:focus-visible {
   border-radius: 2px;
 }         
 
-/* Link Color Dark Theme */
 @media (prefers-color-scheme: dark) {
   a {
     color: #4899F7;
@@ -147,8 +194,6 @@ a:focus-visible {
 }
 }
 
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
   padding: 0.2rem 0.5rem;
   margin: 0 0.2rem;
@@ -164,8 +209,6 @@ pre > code {
   white-space: pre;
 }
 
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
   margin-bottom: 1rem;
@@ -185,8 +228,6 @@ ol {
   margin-bottom: 2rem;
 }
 
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
   box-sizing: border-box;
@@ -202,8 +243,6 @@ ol {
   float: left;
 }
 
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -270,4 +309,70 @@ hr {
        url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff') format('woff'), /* Modern Browsers */
        url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+body {
+  background-color: #F8F7F8;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #070807;
+  }
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.avatar {
+  height: 80px;
+  width: 80px;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 2vw + 2rem, 4.25rem);
+}
+
+.button,
+button {
+  display: inline-block;
+  text-decoration: none;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  max-width: 300px;
+  width: 100%;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 16px 10px 12px 10px;
+  letter-spacing: 0.1px;
+  white-space: wrap;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+.button:hover,
+.button:focus-visible {
+  color: #212121;
+  border-color: #888;
+  filter: brightness(90%);
+  outline: #7AB8FF solid 3px
+}
+
+.icon {
+  padding: 0px 8px 3.5px 0px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.button.button-default {
+  color: #ffffff;
+  background-color: #2E090D;
+  border: 1px solid rgba(255,255,255, 0.5);
 }
